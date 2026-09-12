@@ -39,8 +39,10 @@ public class Anggota {
             return;
         }
         
-        if (nominal > jumlahPinjaman) {
-            jumlahPinjaman = 0; 
+        if (nominal < 0.1 * jumlahPinjaman) {
+            System.out.println("Maaf, angsuran harus minimal 10% dari jumlah pinjaman.");
+        } else if (nominal > jumlahPinjaman) {
+            System.out.println("Maaf, angsuran melebihi jumlah pinjaman. mau pinnjam lagi?");
         } else {
             jumlahPinjaman -= nominal;
         }
