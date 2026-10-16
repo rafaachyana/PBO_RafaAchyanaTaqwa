@@ -1,7 +1,7 @@
 package jobsheet7;
 
 public class Pegawai {
-    public String nip;
+    private String nip;
     public String nama;
     public double gaji;
 
