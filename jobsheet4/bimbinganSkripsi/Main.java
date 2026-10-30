@@ -17,5 +17,7 @@ public class Main {
 
         Mahasiswa mhs2 = new Mahasiswa("2241720002", "Khidir Karawita");
         System.out.println(mhs2.getInfo());
+
+        d2.setNama("Rafa Achyana");
     }
 }

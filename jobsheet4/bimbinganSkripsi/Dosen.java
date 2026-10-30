@@ -4,9 +4,9 @@ public class Dosen {
     private String nidn;
     private String nama;
 
-    public Dosen(String nidn, String nama) {
+    public Dosen(String nidn, String newNama) {
         this.nidn = nidn;
-        this.nama = nama;
+        nama = newNama;
     }
 
     public String getNidn() {

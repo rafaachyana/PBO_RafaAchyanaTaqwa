@@ -1,4 +1,4 @@
-package jobsheet3;
+package jobsheet3.koperasi;
 
 public class TestKoperasi {
     public static void main(String[] args) {

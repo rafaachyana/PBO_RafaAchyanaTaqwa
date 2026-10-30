@@ -1,4 +1,4 @@
-package jobsheet3;
+package jobsheet3.koperasi;
 
 public class Anggota {
     private String nomorKtp;

@@ -1,4 +1,4 @@
-package jobsheet3;
+package jobsheet3.UserMotor;
 
 public class Motor {
     private String platNomor;
