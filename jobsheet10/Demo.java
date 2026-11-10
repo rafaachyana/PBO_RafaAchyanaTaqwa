@@ -15,6 +15,13 @@ public class Demo {
         System.out.println(newDosen.nidn);
         newDosen.mengajar();
 
-        TenagaKependidikan test = (TenagaKependidikan) pegawai1;
+        TenagaKependidikan tendik1 = new TenagaKependidikan("19750301", "Aida, A.Md", "Tenaga Administrasi");
+
+        train(dosen1);
+        train(tendik1);
+    }
+    public static void train(Pegawai pegawai) {
+        System.out.println("Memberikan pelatihan untuk pegawai");
+        pegawai.displayInfo();
     }    
 }
