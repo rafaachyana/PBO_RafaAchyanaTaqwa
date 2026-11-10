@@ -21,12 +21,12 @@ public class Demo {
         train(tendik1);
     }
     public static void train(Pegawai pegawai) {
-        System.out.println("Memberikan pelatihan untuk pegawai");
         pegawai.displayInfo();
+        System.out.println("Mengenalkan lingkungan kampus");
+        System.out.println("Menginfokan SOP/juknis");
 
-        //hanya test
-        System.out.println(pegawai.nidn);
-        System.out.println(pegawai.kategori);
-        pegawai.mengajar();
+        if (pegawai instanceof Dosen) {
+            System.out.println("Memberikan pelatihan pedagogik");
+        }    
     }    
 }
