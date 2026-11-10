@@ -11,12 +11,14 @@ public class Main {
 
         kulkas1.getInfo();
         kulkas1.setSuhu(-8);
+        System.out.println("Estimasi Konsumsi Energi (24 jam/hari): " + kulkas1.cekKonsumsiListrikBulanan(24) + " kWh/bulan");
 
         tv1.getInfo();
         tv1.setVolume(30);
+        System.out.println("Estimasi Konsumsi Energi (6 jam/hari) : " + tv1.cekKonsumsiListrikBulanan(6) + " kWh/bulan");
 
         tv2.getInfo();
         tv2.setVolume(35);
+        System.out.println("Estimasi Konsumsi Energi (6 jam/hari) : " + tv2.cekKonsumsiListrikBulanan(6) + " kWh/bulan");
     }
 }
-

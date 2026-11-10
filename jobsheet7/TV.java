@@ -8,6 +8,7 @@ public class TV extends BElektronik {
 
     public TV() {
         System.out.println("Constructor TV tanpa parameter");
+        super.merk = "Sharp";
         super.harga = 3000000;
         super.warna = "Hitam";
         super.dayaListrik = 100;
@@ -29,6 +30,12 @@ public class TV extends BElektronik {
         } else {
             System.out.println("Volume harus antara 0 sampai 100.");
         }
+    }
+
+    @Override 
+    public double cekKonsumsiListrikBulanan(int jamPemakaianPerHari) {
+        double kwhHarian = (dayaListrik * 30 * jamPemakaianPerHari * 30) / 1000.0;
+        return kwhHarian * 30;
     }
 
     @Override

@@ -23,6 +23,11 @@ public class Kulkas extends BElektronik {
             System.out.println("Suhu minimum kulkas harus " + "0 derajat atau lebih rendah.");
         }
     }
+    @Override 
+    public double cekKonsumsiListrikBulanan(int jamPemakaianPerHari) {
+        double kwhHarian = (dayaListrik * 30 * jamPemakaianPerHari * 30) / 1000.0;
+        return kwhHarian * 30;
+    }
 
     @Override
     public void getInfo() {
