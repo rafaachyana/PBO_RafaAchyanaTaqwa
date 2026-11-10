@@ -9,7 +9,12 @@ public class Demo {
         System.out.println(pegawai1.nip);
         System.out.println(pegawai1.nama);
         pegawai1.displayInfo();
-        //System.out.println(pegawai1.nidn);
-        //pegawai1.mengajar();
+        
+        Dosen newDosen = (Dosen) pegawai1;
+        System.out.println(newDosen.nama);
+        System.out.println(newDosen.nidn);
+        newDosen.mengajar();
+
+        TenagaKependidikan test = (TenagaKependidikan) pegawai1;
     }    
 }
